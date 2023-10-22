@@ -7,14 +7,16 @@ import 'message_widget.dart';
 class ChatScreen extends StatelessWidget {
   final TextEditingController _controller = TextEditingController();
 
+  ChatScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return StreamProvider<List<Message>>(
       create: (context) =>
           Provider.of<ChatProvider>(context, listen: false).messagesStream,
-      initialData: [],
+      initialData: const [],
       child: Scaffold(
-        appBar: AppBar(title: Text("Chat")),
+        appBar: AppBar(title: const Text("Chat")),
         body: Column(
           children: [
             Expanded(
@@ -33,12 +35,12 @@ class ChatScreen extends StatelessWidget {
                   Expanded(
                     child: TextField(
                       controller: _controller,
-                      decoration:
-                          InputDecoration(hintText: "Enter your message..."),
+                      decoration: const InputDecoration(
+                          hintText: "Enter your message..."),
                     ),
                   ),
                   IconButton(
-                    icon: Icon(Icons.send),
+                    icon: const Icon(Icons.send),
                     onPressed: () {
                       Provider.of<ChatProvider>(context, listen: false)
                           .sendMessage(_controller.text);

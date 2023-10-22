@@ -4,7 +4,7 @@ import '../models/message_model.dart';
 class MessageWidget extends StatelessWidget {
   final Message message;
 
-  MessageWidget({required this.message});
+  const MessageWidget({super.key, required this.message});
 
   @override
   Widget build(BuildContext context) {

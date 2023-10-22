@@ -2,14 +2,14 @@ import 'dart:async';
 import '../models/message_model.dart';
 
 class FakeApiService {
-  List<Message> _messages = [];
+  final List<Message> _messages = [];
 
   final StreamController<List<Message>> _messageController =
       StreamController<List<Message>>.broadcast();
 
   FakeApiService() {
     Timer.periodic(
-      Duration(seconds: 5),
+      const Duration(seconds: 5),
       (timer) {
         addMessage(Message(
             sender: "User${timer.tick}",
