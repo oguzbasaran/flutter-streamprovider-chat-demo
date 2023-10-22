@@ -15,19 +15,19 @@ Follow these instructions to set up the project locally.
 
 **Clone the Repository:**
 
-git clone https://github.com/[your_username]/flutter_streamprovider_fakeapi_chat.git
+    git clone https://github.com/[your_username]/flutter_streamprovider_fakeapi_chat.git
 
 **Navigate into the Project Directory:**
 
-cd flutter_streamprovider_fakeapi_chat
+    cd flutter_streamprovider_fakeapi_chat
 
 **Install the Dependencies:**
 
-flutter pub get
+    flutter pub get
 
 **Run the Application:**
 
-flutter run
+    flutter run
 
 #### Tech Stack
 - **Flutter**: A powerful UI toolkit for crafting natively compiled applications across mobile, web, and desktop from a single codebase.
