@@ -1,4 +1,4 @@
-### Flutter StreamProvider & FakeAPI Chat Demo
+# Flutter StreamProvider & FakeAPI Chat Demo
 
 This Flutter application showcases the implementation and advantages of using StreamProvider for state management, combined with a simulated fake API to simulate real-time chat functionalities.
 
